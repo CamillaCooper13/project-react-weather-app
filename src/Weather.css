@@ -1,3 +1,63 @@
 .Weather {
-    border: 1px solid grey;
+  border: 1px solid  #707070;
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 15px;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%)
+}
+
+.Weather h1 {
+  font-family: "Hind Siliguri", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  margin: 20px 30px;
+  padding: 10px 15px;
+  color: #f9f9fa;
+  text-shadow: 2px 3px #707070; 
+}
+
+ .Weather  img {
+  margin-right: 5px;
+  height: 74px;
+  width: 74px;
+}
+
+ .weather-temperature strong {
+   font-family: "Hind Siliguri", sans-serif;
+   color: #f9f9fa;
+  font-size: 60px;
+  line-height: 1;
+  font-weight: 400;
+  text-shadow: 3px 5px #707070; 
+}
+
+.Weather .unit {
+   font-family: "Hind Siliguri", sans-serif;
+   color: #f9f9fa;
+   text-shadow: 1px 3px #707070; 
+   font-size: 16px;
+    line-height: 1;
+    top: -34px;
+    margin-left: 5px;
+    position: relative;
+
+}
+
+
+ ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #f9f9fa;
+}
+
+li:first-letter {
+ text-transform: capitalize;
 }

@@ -11,6 +11,7 @@ export default function Weather() {
                  type="search"
                  placeholder="Enter a city..."
                  className="form-control"
+                 autoFocus="on"
                  />
                  </div>
                  <div className="col-3">
@@ -22,20 +23,26 @@ export default function Weather() {
     <h1>Honolulu</h1>
     <ul>
         <li>Tuesday 11:28</li>
-        <li>Light rain</li>
+        <li>Partly cloudy</li>
     </ul>
-    <div className="row">
+    <div className="row mt-3">
         <div className="col-6">
-            <img src="https://ssl.gstatic.com/onebox/weather/64/rain_light.png"
-            alt="Light rain"
+            <div className="clearfix weather-temperature">
+            <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+            alt="Partly cloudy"
+            className="float-left"
             />
-            6°C
+            <div className="float=left">
+           <span className="temperatue"><strong>25</strong></span>
+           <span className="unit">°C</span> 
+        </div>
+        </div>
         </div>
         <div className="col-6">
             <ul>
-                <li>Precipitation: 15%</li>
-                <li>Humidity: 72%</li>
-                <li>Wind: 13km/h</li>
+                <li>Precipitation: 95%</li>
+                <li>Humidity: 78%</li>
+                <li>Wind: 8 km/h</li>
             </ul>
         </div>
     </div>
