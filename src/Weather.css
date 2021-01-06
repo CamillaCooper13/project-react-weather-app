@@ -23,9 +23,10 @@
   width: 74px;
 }
 
- .weather-temperature strong {
+ .weather-temperature {
    font-family: "Hind Siliguri", sans-serif;
    color: #f9f9fa;
+   
   font-size: 60px;
   line-height: 1;
   font-weight: 400;
@@ -39,7 +40,7 @@
    font-size: 16px;
     line-height: 1;
     top: -34px;
-    margin-left: 5px;
+    margin-left: 0px;
     position: relative;
 
 }
