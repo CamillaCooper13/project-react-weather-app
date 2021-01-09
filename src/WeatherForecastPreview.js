@@ -2,20 +2,11 @@ import React from "react";
 import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherForecastPreview(props) {
-
-{new Date(props.data.dt_text).getDays()};
-let day = days.getDay();
-let days = [
-"Sunday", 
-"Monday",
- "Tuesday", 
- "Wednesday", 
- "Thursday",
-  "Friday",
-   "Saturday"
-];
-     return `${day}`;
-   }
+function hours(){
+    let data = new Date(props.data.dt * 1000);
+    let hours = data.getHours();
+    return `${hours}:00`;
+}
 
    function temperature(){
        let temperature =  Math.round(props.data.main.temp)
@@ -24,11 +15,12 @@ let days = [
    
     return (
         <div className="WeatherForecastPreview col">
-            {Days()}
+            {hours()}
             <WeatherIcon code={props.data.weather[0].icon} />
          </div>
     );
-      }
+}
+      
     
       
       
