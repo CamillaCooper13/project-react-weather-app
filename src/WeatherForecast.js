@@ -12,11 +12,11 @@ export default function WeatherForecast(props) {
         setLoaded(true);
     }
 
-if (loaded) {
+if (loaded && forecast.city.name === props.city) {
     return (
         <div className="WeatherForecast row">
    <div className="col">
-       10:00
+          {new Date(forecast.list[0].dt * 1000).getHours()}:00
   <WeatherIcon code={forecast.list[0].weather[0].icon} />
   {Math.round(forecast.list[0].main.temp)}°C
         </div>
